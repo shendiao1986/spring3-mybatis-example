@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd"
+	default-autowire="byName" default-lazy-init="false">
+
+	<bean id="firstDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close" lazy-init="false">
+		<property name="driverClass" value="${ams.ds.driverClassName}" />
+		<property name="jdbcUrl" value="${ams.ds.jdbcUrl}" />
+		<property name="user" value="${ams.ds.username}" />
+		<property name="password" value="${ams.ds.password}" />
+		<property name="minPoolSize" value="${ams.ds.minPoolSize}" />
+		<property name="maxPoolSize" value="${ams.ds.maxPoolSize}" />
+		<property name="maxIdleTime" value="${ams.ds.maxIdleTime}" />
+		<property name="acquireIncrement" value="${ams.ds.acquireIncrement}" />
+		<property name="maxStatements" value="${ams.ds.maxStatements}" />
+		<property name="initialPoolSize" value="${ams.ds.initialPoolSize}" />
+		<property name="idleConnectionTestPeriod" value="${ams.ds.idleConnectionTestPeriod}" />
+		<property name="acquireRetryAttempts" value="${ams.ds.acquireRetryAttempts}" />
+		<property name="breakAfterAcquireFailure" value="${ams.ds.breakAfterAcquireFailure}" />
+		<property name="testConnectionOnCheckout" value="${ams.ds.testConnectionOnCheckout}" />
+	</bean>
+
+	<bean id="firstSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="firstDataSource" />
+		<!-- <property name="mapperLocations" value="classpath*:com/lenovo/search/data/sync/dao/**/*.xml" 
+			/> -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageInterceptor">
+					<property name="properties">
+						<value>
+							helperDialect=oracle
+							rowBoundsWithCount=true
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="firstDataSource" />
+	</bean>
+</beans>

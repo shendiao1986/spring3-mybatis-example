@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pilot.mapper.PersonMapper">
+
+	<resultMap type="com.pilot.model.Person" id="PersonResultMap">
+		<id property="id" column="PID" />
+		<result property="firstName" column="FIRST_NAME" />
+		<result property="secondName" column="SECOND_NAME" />
+		<!-- <association property="post" column="PERSON_ID" resultMap="PostResultMap" /> -->
+		<association property="post" column="PID" select="selectPostViaXmlFromPersonId" fetchType="lazy"/>
+	</resultMap>
+
+	<resultMap type="com.pilot.model.Post" id="PostResultMap">
+		<id property="id" column="PTID" /><!-- id 标签作为该对象的唯一标识，靠id来进行判断是否为同一个对象 -->
+		<result property="personId" column="PERSON_ID" />
+		<result property="title" column="TITLE" />
+		<!-- <collection property="comments" column="POST_ID" resultMap="CommentResultMap" 
+			/> -->
+		<collection property="comments" column="PTID" select="selectCommentViaXmlFromPostId" fetchType="lazy"/>
+	</resultMap>
+
+	<resultMap type="com.pilot.model.Comment" id="CommentResultMap">
+		<id property="id" column="CTID" />
+		<result property="postId" column="POST_ID" />
+		<result property="content" column="CONTENT" />
+	</resultMap>
+
+
+
+	<select id="selectCommentViaXmlFromPostId" resultMap="CommentResultMap">
+    <![CDATA[
+		SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct WHERE ct.POST_ID=#{id} 
+		]]>
+	</select>
+
+	<select id="selectPostViaXmlFromPersonId" resultMap="PostResultMap">
+    <![CDATA[
+		SELECT pt.PERSON_ID, pt.ID as PTID, pt.TITLE from Post pt where pt.PERSON_ID=#{id}
+		]]>
+	</select>
+
+
+	<select id="selectAllComplexObjects" resultMap="PersonResultMap">
+    <![CDATA[
+		SELECT p.ID as PID, p.FIRST_NAME, p.SECOND_NAME, pt.PERSON_ID, pt.ID as PTID, pt.TITLE, ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM PERSON p left outer join Post pt on p.ID=pt.PERSON_ID left outer join "COMMENT" ct on ct.POST_ID=pt.ID
+		]]>
+	</select>
+
+
+	<select id="selectAllAsList" resultMap="PersonResultMap">
+    <![CDATA[
+		SELECT ID as PID, FIRST_NAME,SECOND_NAME FROM PERSON
+		]]>
+	</select>
+
+	<select id="selectAllAsCursor" resultMap="PersonResultMap">
+    <![CDATA[
+		SELECT ID as PID, FIRST_NAME,SECOND_NAME FROM PERSON
+		]]>
+	</select>
+
+
+</mapper>

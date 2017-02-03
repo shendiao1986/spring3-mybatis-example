@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="mybatis.properties"></properties>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+	<typeAliases>
+		<package name="com.pilot.model" />
+	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<property name="helperDialect" value="oracle" />
+			<property name="rowBoundsWithCount" value="true" />
+		</plugin>
+	</plugins>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${development.driver}" />
+				<property name="url" value="${development.url}" />
+				<property name="username" value="${development.username}" />
+				<property name="password" value="${development.password}" />
+				<property name="poolMaximumActiveConnections" value="10" />
+				<property name="poolMaximumIdleConnections" value="0" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<!-- <mapper resource="com/pilot/mapper/PersonMapper.xml" /> -->
+		<package name="com.pilot.mapper" />
+	</mappers>
+</configuration>

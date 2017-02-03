@@ -1,0 +1,519 @@
+[2017-01-25 16:15:48 664 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==>  Preparing: DELETE FROM "COMMENT" 
+[2017-01-25 16:15:48 804 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:15:48 859 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - <==    Updates: 9
+[2017-01-25 16:15:48 861 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==>  Preparing: DELETE FROM POST 
+[2017-01-25 16:15:48 861 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:15:48 911 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - <==    Updates: 3
+[2017-01-25 16:15:48 913 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==>  Preparing: DELETE FROM PERSON 
+[2017-01-25 16:15:48 913 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:15:48 978 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - <==    Updates: 3
+[2017-01-25 16:15:50 145 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 146 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 277 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 279 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 280 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 137(Long), a(String), a1(String)
+[2017-01-25 16:15:50 418 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:15:50 419 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 420 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 488 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 488 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 489 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 118(Long), 137(Long), aaaa(String)
+[2017-01-25 16:15:50 539 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:15:50 540 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 540 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 597 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 597 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 598 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 352(Long), 118(Long), a-comment-1(String)
+[2017-01-25 16:15:50 650 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:50 651 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 651 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 702 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 702 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 702 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 353(Long), 118(Long), a-comment-2(String)
+[2017-01-25 16:15:50 752 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:50 752 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 753 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 803 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 803 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 806 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 354(Long), 118(Long), a-comment-3(String)
+[2017-01-25 16:15:50 856 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:50 858 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 859 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:15:50 908 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:15:50 909 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:15:50 909 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 138(Long), b(String), b1(String)
+[2017-01-25 16:15:50 959 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:15:50 960 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:50 960 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 010 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 011 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 011 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 119(Long), 138(Long), bbbb(String)
+[2017-01-25 16:15:51 061 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:15:51 062 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 062 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 112 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 113 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 113 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 355(Long), 119(Long), b-comment-1(String)
+[2017-01-25 16:15:51 162 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:51 162 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 163 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 212 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 214 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 216 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 356(Long), 119(Long), b-comment-2(String)
+[2017-01-25 16:15:51 266 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:51 267 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 267 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 318 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 320 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 322 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 357(Long), 119(Long), b-comment-3(String)
+[2017-01-25 16:15:51 374 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:51 375 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 376 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 425 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 426 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 426 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 139(Long), c(String), c1(String)
+[2017-01-25 16:15:51 475 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:15:51 477 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 477 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 528 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 529 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 529 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 120(Long), 139(Long), cccc(String)
+[2017-01-25 16:15:51 579 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:15:51 581 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 581 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 630 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 631 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 632 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 358(Long), 120(Long), c-comment-1(String)
+[2017-01-25 16:15:51 682 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:51 684 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 684 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 734 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 734 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 735 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 359(Long), 120(Long), c-comment-2(String)
+[2017-01-25 16:15:51 784 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:51 785 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:15:51 786 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:15:51 837 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:15:51 838 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:15:51 838 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 360(Long), 120(Long), c-comment-3(String)
+[2017-01-25 16:15:51 888 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:15:53 052 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==>  Preparing: SELECT count(0) FROM "COMMENT" ct 
+[2017-01-25 16:15:53 053 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==> Parameters: 
+[2017-01-25 16:15:53 129 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - <==      Total: 1
+[2017-01-25 16:15:53 131 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct ) TMP_PAGE WHERE ROWNUM <= 17 ) WHERE ROW_ID > 7 
+[2017-01-25 16:15:53 132 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==> Parameters: 
+[2017-01-25 16:15:53 195 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - <==      Total: 2
+[2017-01-25 16:17:51 026 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==>  Preparing: DELETE FROM "COMMENT" 
+[2017-01-25 16:17:51 145 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:17:51 199 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - <==    Updates: 9
+[2017-01-25 16:17:51 200 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==>  Preparing: DELETE FROM POST 
+[2017-01-25 16:17:51 200 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:17:51 249 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - <==    Updates: 3
+[2017-01-25 16:17:51 251 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==>  Preparing: DELETE FROM PERSON 
+[2017-01-25 16:17:51 252 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==> Parameters: 
+[2017-01-25 16:17:51 301 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - <==    Updates: 3
+[2017-01-25 16:17:52 457 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:52 458 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:17:52 537 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:17:52 538 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:17:52 539 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 140(Long), a(String), a1(String)
+[2017-01-25 16:17:52 589 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:17:52 591 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:52 591 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:17:52 641 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:17:52 642 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:17:52 642 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 121(Long), 140(Long), aaaa(String)
+[2017-01-25 16:17:52 692 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:17:52 693 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:52 693 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:52 743 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:52 744 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:52 745 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 361(Long), 121(Long), a-comment-1(String)
+[2017-01-25 16:17:52 796 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:52 797 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:52 798 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:52 848 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:52 848 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:52 849 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 362(Long), 121(Long), a-comment-2(String)
+[2017-01-25 16:17:52 898 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:52 899 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:52 900 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:52 949 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:52 950 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:52 952 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 363(Long), 121(Long), a-comment-3(String)
+[2017-01-25 16:17:53 002 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 004 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 004 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 054 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 055 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 055 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 141(Long), b(String), b1(String)
+[2017-01-25 16:17:53 105 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:17:53 107 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 108 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 159 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 159 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 160 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 122(Long), 141(Long), bbbb(String)
+[2017-01-25 16:17:53 209 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:17:53 210 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 210 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 260 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 261 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 261 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 364(Long), 122(Long), b-comment-1(String)
+[2017-01-25 16:17:53 310 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 311 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 312 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 361 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 362 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 363 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 365(Long), 122(Long), b-comment-2(String)
+[2017-01-25 16:17:53 412 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 414 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 414 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 468 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 468 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 469 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 366(Long), 122(Long), b-comment-3(String)
+[2017-01-25 16:17:53 518 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 520 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 520 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 569 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 569 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 570 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 142(Long), c(String), c1(String)
+[2017-01-25 16:17:53 619 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 16:17:53 620 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 620 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 671 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 671 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 672 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 123(Long), 142(Long), cccc(String)
+[2017-01-25 16:17:53 721 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 16:17:53 724 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 724 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 774 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 775 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 777 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 367(Long), 123(Long), c-comment-1(String)
+[2017-01-25 16:17:53 827 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 830 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 831 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 884 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 884 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 885 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 368(Long), 123(Long), c-comment-2(String)
+[2017-01-25 16:17:53 934 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:53 935 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 16:17:53 936 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 16:17:53 985 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 16:17:53 986 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 16:17:53 987 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 369(Long), 123(Long), c-comment-3(String)
+[2017-01-25 16:17:54 036 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 16:17:55 181 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==>  Preparing: SELECT count(0) FROM "COMMENT" ct 
+[2017-01-25 16:17:55 182 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==> Parameters: 
+[2017-01-25 16:17:55 233 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - <==      Total: 1
+[2017-01-25 16:17:55 234 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct ) TMP_PAGE WHERE ROWNUM <= 17 ) WHERE ROW_ID > 7 
+[2017-01-25 16:17:55 234 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==> Parameters: 
+[2017-01-25 16:17:55 292 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - <==      Total: 2
+[2017-01-25 17:09:31 957 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==>  Preparing: DELETE FROM "COMMENT" 
+[2017-01-25 17:09:32 062 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:09:32 154 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - <==    Updates: 9
+[2017-01-25 17:09:32 158 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==>  Preparing: DELETE FROM POST 
+[2017-01-25 17:09:32 158 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:09:32 232 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:09:32 233 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==>  Preparing: DELETE FROM PERSON 
+[2017-01-25 17:09:32 233 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:09:32 399 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:09:32 408 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:32 409 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:09:32 589 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:09:32 597 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:09:32 598 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 143(Long), a(String), a1(String)
+[2017-01-25 17:09:32 712 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:09:32 713 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:32 713 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:09:32 763 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:09:32 764 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:09:32 764 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 124(Long), 143(Long), aaaa(String)
+[2017-01-25 17:09:32 923 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:09:32 923 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:32 924 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:32 973 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:32 973 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:32 973 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 370(Long), 124(Long), a-comment-1(String)
+[2017-01-25 17:09:33 023 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 024 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 024 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 074 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 075 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 076 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 371(Long), 124(Long), a-comment-2(String)
+[2017-01-25 17:09:33 126 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 127 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 127 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 177 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 178 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 178 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 372(Long), 124(Long), a-comment-3(String)
+[2017-01-25 17:09:33 228 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 229 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 229 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 280 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 281 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 281 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 144(Long), b(String), b1(String)
+[2017-01-25 17:09:33 419 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:09:33 420 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 421 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 472 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 473 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 473 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 125(Long), 144(Long), bbbb(String)
+[2017-01-25 17:09:33 609 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:09:33 609 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 609 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 659 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 659 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 660 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 373(Long), 125(Long), b-comment-1(String)
+[2017-01-25 17:09:33 709 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 710 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 710 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 760 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 760 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 762 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 374(Long), 125(Long), b-comment-2(String)
+[2017-01-25 17:09:33 895 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 896 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 897 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:33 946 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:33 946 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:33 947 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 375(Long), 125(Long), b-comment-3(String)
+[2017-01-25 17:09:33 997 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:33 997 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:33 998 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:09:34 047 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:09:34 047 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:09:34 048 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 145(Long), c(String), c1(String)
+[2017-01-25 17:09:34 097 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:09:34 098 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:34 098 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:09:34 147 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:09:34 147 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:09:34 147 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 126(Long), 145(Long), cccc(String)
+[2017-01-25 17:09:34 197 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:09:34 197 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:34 198 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:34 247 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:34 247 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:34 248 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 376(Long), 126(Long), c-comment-1(String)
+[2017-01-25 17:09:34 298 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:34 299 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:34 299 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:34 348 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:34 348 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:34 349 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 377(Long), 126(Long), c-comment-2(String)
+[2017-01-25 17:09:34 398 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:34 399 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:09:34 400 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:09:34 450 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:09:34 451 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:09:34 452 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 378(Long), 126(Long), c-comment-3(String)
+[2017-01-25 17:09:34 504 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:09:34 505 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==>  Preparing: SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct 
+[2017-01-25 17:09:34 505 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==> Parameters: 
+[2017-01-25 17:09:34 574 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - <==      Total: 9
+[2017-01-25 17:19:15 224 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==>  Preparing: DELETE FROM "COMMENT" 
+[2017-01-25 17:19:15 319 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:15 384 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - <==    Updates: 9
+[2017-01-25 17:19:15 385 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==>  Preparing: DELETE FROM POST 
+[2017-01-25 17:19:15 386 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:15 437 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:19:15 437 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==>  Preparing: DELETE FROM PERSON 
+[2017-01-25 17:19:15 438 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:15 487 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:19:15 490 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:15 490 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:15 564 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:15 570 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:15 571 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 146(Long), a(String), a1(String)
+[2017-01-25 17:19:15 622 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:15 624 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:15 624 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:15 674 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:15 674 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:15 674 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 127(Long), 146(Long), aaaa(String)
+[2017-01-25 17:19:15 724 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:15 725 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:15 725 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:15 774 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:15 774 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:15 775 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 379(Long), 127(Long), a-comment-1(String)
+[2017-01-25 17:19:15 824 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:15 825 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:15 825 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:15 878 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:15 879 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:15 879 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 380(Long), 127(Long), a-comment-2(String)
+[2017-01-25 17:19:15 931 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:15 932 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:15 933 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:15 982 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:15 983 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:15 984 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 381(Long), 127(Long), a-comment-3(String)
+[2017-01-25 17:19:16 034 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:16 035 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 035 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 085 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 086 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 087 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 147(Long), b(String), b1(String)
+[2017-01-25 17:19:16 138 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:16 142 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 143 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 193 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 194 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 194 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 128(Long), 147(Long), bbbb(String)
+[2017-01-25 17:19:16 244 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:16 246 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 247 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 297 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 297 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 298 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 382(Long), 128(Long), b-comment-1(String)
+[2017-01-25 17:19:16 434 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:16 435 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 435 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 486 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 486 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 487 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 383(Long), 128(Long), b-comment-2(String)
+[2017-01-25 17:19:16 539 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:16 540 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 541 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 591 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 592 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 593 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 384(Long), 128(Long), b-comment-3(String)
+[2017-01-25 17:19:16 728 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:16 730 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 730 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 779 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 780 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 781 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 148(Long), c(String), c1(String)
+[2017-01-25 17:19:16 916 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:16 917 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:16 917 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:16 966 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:16 967 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:16 968 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 129(Long), 148(Long), cccc(String)
+[2017-01-25 17:19:17 018 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:17 021 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:17 022 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:17 072 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:17 073 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:17 075 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 385(Long), 129(Long), c-comment-1(String)
+[2017-01-25 17:19:17 125 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:17 127 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:17 127 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:17 177 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:17 178 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:17 179 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 386(Long), 129(Long), c-comment-2(String)
+[2017-01-25 17:19:17 229 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:17 231 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:17 232 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:17 282 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:17 282 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:17 283 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 387(Long), 129(Long), c-comment-3(String)
+[2017-01-25 17:19:17 418 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:17 421 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct ) TMP_PAGE WHERE ROWNUM <= 17 ) WHERE ROW_ID > 7 
+[2017-01-25 17:19:17 422 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==> Parameters: 
+[2017-01-25 17:19:17 481 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - <==      Total: 2
+[2017-01-25 17:19:49 488 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==>  Preparing: DELETE FROM "COMMENT" 
+[2017-01-25 17:19:49 583 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:49 639 DEBUG] [main] com.pilot.mapper.CommentMapper.deleteAll - <==    Updates: 9
+[2017-01-25 17:19:49 641 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==>  Preparing: DELETE FROM POST 
+[2017-01-25 17:19:49 641 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:49 691 DEBUG] [main] com.pilot.mapper.PostMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:19:49 692 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==>  Preparing: DELETE FROM PERSON 
+[2017-01-25 17:19:49 692 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - ==> Parameters: 
+[2017-01-25 17:19:49 741 DEBUG] [main] com.pilot.mapper.PersonMapper.deleteAll - <==    Updates: 3
+[2017-01-25 17:19:49 745 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:49 745 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:49 819 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:49 825 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:49 826 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 149(Long), a(String), a1(String)
+[2017-01-25 17:19:49 887 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:49 894 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:49 897 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:49 953 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:49 953 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:49 954 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 130(Long), 149(Long), aaaa(String)
+[2017-01-25 17:19:50 091 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:50 094 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 094 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 145 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 146 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 147 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 388(Long), 130(Long), a-comment-1(String)
+[2017-01-25 17:19:50 197 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 199 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 199 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 249 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 250 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 251 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 389(Long), 130(Long), a-comment-2(String)
+[2017-01-25 17:19:50 301 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 303 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 303 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 352 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 353 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 354 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 390(Long), 130(Long), a-comment-3(String)
+[2017-01-25 17:19:50 404 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 406 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 406 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 456 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 456 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 456 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 150(Long), b(String), b1(String)
+[2017-01-25 17:19:50 506 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:50 508 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 509 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 565 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 566 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 567 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 131(Long), 150(Long), bbbb(String)
+[2017-01-25 17:19:50 616 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:50 617 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 618 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 668 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 669 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 669 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 391(Long), 131(Long), b-comment-1(String)
+[2017-01-25 17:19:50 719 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 720 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 720 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 769 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 770 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 772 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 392(Long), 131(Long), b-comment-2(String)
+[2017-01-25 17:19:50 821 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 824 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 824 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 874 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 875 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 876 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 393(Long), 131(Long), b-comment-3(String)
+[2017-01-25 17:19:50 926 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:50 928 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==>  Preparing: SELECT S_PERSON_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:50 928 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - ==> Parameters: 
+[2017-01-25 17:19:50 978 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson!selectKey - <==      Total: 1
+[2017-01-25 17:19:50 979 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==>  Preparing: INSERT INTO PERSON (ID, FIRST_NAME, SECOND_NAME) VALUES(?, ?, ?) 
+[2017-01-25 17:19:50 980 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - ==> Parameters: 151(Long), c(String), c1(String)
+[2017-01-25 17:19:51 031 DEBUG] [main] com.pilot.mapper.PersonMapper.savePerson - <==    Updates: 1
+[2017-01-25 17:19:51 032 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==>  Preparing: SELECT S_POST_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:51 032 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - ==> Parameters: 
+[2017-01-25 17:19:51 081 DEBUG] [main] com.pilot.mapper.PostMapper.savePost!selectKey - <==      Total: 1
+[2017-01-25 17:19:51 081 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==>  Preparing: INSERT INTO POST (ID, PERSON_ID, TITLE) VALUES(?, ?, ?) 
+[2017-01-25 17:19:51 082 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - ==> Parameters: 132(Long), 151(Long), cccc(String)
+[2017-01-25 17:19:51 131 DEBUG] [main] com.pilot.mapper.PostMapper.savePost - <==    Updates: 1
+[2017-01-25 17:19:51 135 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:51 136 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:51 186 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:51 188 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:51 189 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 394(Long), 132(Long), c-comment-1(String)
+[2017-01-25 17:19:51 239 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:51 242 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:51 242 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:51 292 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:51 292 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:51 292 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 395(Long), 132(Long), c-comment-2(String)
+[2017-01-25 17:19:51 342 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:51 344 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==>  Preparing: SELECT S_COMMENT_INDEX.NEXTVAL FROM dual 
+[2017-01-25 17:19:51 345 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - ==> Parameters: 
+[2017-01-25 17:19:51 395 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment!selectKey - <==      Total: 1
+[2017-01-25 17:19:51 395 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==>  Preparing: INSERT INTO "COMMENT" (ID, POST_ID, CONTENT) VALUES(?, ?, ?) 
+[2017-01-25 17:19:51 396 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - ==> Parameters: 396(Long), 132(Long), c-comment-3(String)
+[2017-01-25 17:19:51 446 DEBUG] [main] com.pilot.mapper.CommentMapper.saveComment - <==    Updates: 1
+[2017-01-25 17:19:51 492 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==>  Preparing: SELECT count(0) FROM "COMMENT" ct 
+[2017-01-25 17:19:51 492 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - ==> Parameters: 
+[2017-01-25 17:19:51 617 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments_COUNT - <==      Total: 1
+[2017-01-25 17:19:51 618 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT ct.ID as CTID, ct.POST_ID, ct.CONTENT FROM "COMMENT" ct ) TMP_PAGE WHERE ROWNUM <= 17 ) WHERE ROW_ID > 7 
+[2017-01-25 17:19:51 619 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - ==> Parameters: 
+[2017-01-25 17:19:51 677 DEBUG] [main] com.pilot.mapper.PersonMapper.selectAllComments - <==      Total: 2

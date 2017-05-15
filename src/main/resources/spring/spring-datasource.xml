@@ -31,6 +31,11 @@
 		<property name="dataSource" ref="firstDataSource" />
 		<!-- <property name="mapperLocations" value="classpath*:com/lenovo/search/data/sync/dao/**/*.xml" 
 			/> -->
+		<property name="configuration">
+			<bean class="org.apache.ibatis.session.Configuration" autowire="no">
+				<property name="jdbcTypeForNull" value="NULL" />
+			</bean>
+		</property>
 		<property name="plugins">
 			<array>
 				<bean class="com.github.pagehelper.PageInterceptor">

@@ -38,6 +38,8 @@ public class MybatisService {
 			System.out.println(cmt.getContent());
 		}
 
+		System.out.println(cmtMapper.getCommentTotal());
+
 	}
 
 	@Transactional
